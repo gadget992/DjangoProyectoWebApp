@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -7,8 +9,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
+    {% load static %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'ProyectoWebApp/css/home.css' %}">
+
 </head>
 <body>
-     <h1>Home</h1>
+    <header>
+        <h1 class="text-center">Home</h1>
+    </header>
+
+    <main>
+        <nav class="w-3/4 gap-1 m-auto flex justify-between">
+            <a href="blog">Blog</a>
+            <a href="tienda">Tienda</a>
+            <a href="servicios">Servicios</a>
+            <a href="tienda">Tienda</a>
+            <a href="contacto">Contactos</a>
+
+        </nav>
+    </main>
 </body>
 </html>
