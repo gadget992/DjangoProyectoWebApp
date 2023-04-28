@@ -1,33 +1,11 @@
+{% extends "ProyectoWebApp/base.html" %}
 
+{% load static %}
 
-<!doctype html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+{% block content %}
 
-    {% load static %}
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="{% static 'ProyectoWebApp/css/home.css' %}">
+<h1>
+    <p>HOME esta es la plantilla de home</p>
+</h1>
 
-</head>
-<body>
-    <header>
-        <h1 class="text-center">Home</h1>
-    </header>
-
-    <main>
-        <nav class="w-3/4 gap-1 m-auto flex justify-between">
-            <a href="blog">Blog</a>
-            <a href="tienda">Tienda</a>
-            <a href="servicios">Servicios</a>
-            <a href="tienda">Tienda</a>
-            <a href="contacto">Contactos</a>
-
-        </nav>
-    </main>
-</body>
-</html>
+{% endblock %}
